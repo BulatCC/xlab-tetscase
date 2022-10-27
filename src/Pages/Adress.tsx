@@ -3,7 +3,7 @@ import { SearchResult } from '../Components/SearchResult/SearchResult';
 import { api } from '../Services/Api';
 
 type SearchResultType = {
-    suggestions: []
+    suggestions: [];
 }
 
 const Adress = (): JSX.Element => {
@@ -34,7 +34,7 @@ const Adress = (): JSX.Element => {
         }
     }
 
-    const inputChangeHandler = ({ target }: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>): void => {
+    const inputChangeHandler = ({ target }: ChangeEvent<HTMLInputElement>): void => {
         setinputValue(target.value.trim());
     }
 

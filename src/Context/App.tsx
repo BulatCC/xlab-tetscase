@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useReducer } from 'react';
+import { createContext, ReactNode, useReducer, Dispatch } from 'react';
 
 type UserContextProviderProps = {
     children: ReactNode;
@@ -10,12 +10,12 @@ type AppState = {
 
 type ContextType = {
     state: AppState;
-    dispatch: any;
+    dispatch: Dispatch<ActionType>;
 }
 
 type ActionType = {
-    type: string, 
-    payload: any
+    type: string;
+    payload: boolean;
 }
 
 const actionBurger = (payload: boolean) => {
@@ -26,7 +26,7 @@ const actionBurger = (payload: boolean) => {
 }
 
 const initialState: AppState = {
-    isBurgerOpen: false
+    isBurgerOpen: false,
 };
 
 const reducer = (state: AppState, action: ActionType) => {
