@@ -2,7 +2,7 @@
 Для начала работы у вас должент быть установлен **Node.js**
 
 ## Хостинг проекта
-https://xlab-tetscase.vercel.app/adress
+https://xlab-tetscase.vercel.app/
 
 ### Основные команды для работы
 - Установка - `npm i`
