@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* stylelint-disable-next-line */
+  min-height: calc(100 * var(--vh, 1vh));
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.scrollable {
+    padding-bottom: 2.5rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(167, 167, 167) transparent;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(167, 167, 167);
+    border-radius: 20px;
+    border: 3px solid transparent;
+  }
+
+  p + p {
+    margin-top: 2.4rem;
+  }

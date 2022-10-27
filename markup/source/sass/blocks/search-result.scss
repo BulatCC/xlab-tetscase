@@ -1,0 +1,32 @@
+.search-result {
+    padding: 2.4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.8rem rgba(2, 0, 97, 0.25);
+}
+
+.search-result__title {
+    margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+
+    @include vp-768 {
+        font-size: 2rem;
+    }
+}
+
+.search-result__item {
+    padding: 1.3rem 0;
+    border-top: 1px solid #D7D7D7;
+
+    &:last-child {
+        border-bottom: 1px solid #D7D7D7;
+    }
+}
+
+.search-result__link {
+    padding: 0.5rem;
+    transition: opacity var(--default-transition);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

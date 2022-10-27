@@ -1,0 +1,10 @@
+.input {
+    padding: 2rem;
+    border: 0.3rem solid var(--color-blue);
+    border-radius: 1rem;
+    outline: none;
+
+    @include vp-768 {
+        padding: 1.3rem;
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+    --default-transition: 0.3s ease;
+
+    // Colors
+    // ---------------------------------
+    --color-blue: #4F27BF;
+    --color-default-white: #ffffff;
+    --color-default-black: #000000;
+    --color-light-black: #1C1C1E;
+}
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+

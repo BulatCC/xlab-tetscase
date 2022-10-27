@@ -1,0 +1,20 @@
+// Mobile first
+
+@mixin vp-768 {
+  @media (max-width: $vp-768) {
+    @content;
+  }
+}
+
+// ---------------------------------
+
+@mixin font-face($family, $src, $weight: normal, $style: normal, $display: swap) {
+    @font-face {
+        font-family: $family;
+        src: url('#{$src}.woff2') format('woff2'),
+             url('#{$src}.woff') format('woff');
+        font-style: $style;
+        font-weight: $weight;
+        font-display: $display;
+    }
+}

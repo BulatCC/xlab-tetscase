@@ -1,0 +1,113 @@
+.menu {
+    padding-top: 2.5rem;
+    padding-left: 3.2rem;
+    box-shadow: 0.6rem 0 0.5rem -0.6rem rgba(2, 0, 96, 0.25);
+    background-color: var(--color-default-white);
+
+    @include vp-768 {
+        display: none;
+        position: absolute;
+        padding-left: 2rem;
+    }
+
+    &.active {
+        @include vp-768 {
+            display: block;
+            height:  calc(100vh - 8rem);
+            width: 100%;
+        }
+    }
+}
+
+.menu__title {
+    margin-bottom: 3.2rem;
+    font-size: 2rem;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.menu__item {
+    position: relative;
+
+    &--expand {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            right: 1.5rem;
+            top: 1rem;
+            background-image: url('.././img/svg/ic_arrow-expand.svg');
+            transform: rotate(180deg);
+            transition: transform var(--default-transition);
+        }
+
+        &.expanded {
+            &::after {
+                transform: rotate(0);
+            }
+        }
+
+        .menu__link {
+            display: flex;
+        }
+
+        .menu__link-title {
+            user-select: none;
+        }
+    }
+
+    &.active {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0.3rem;
+            height: 3.7rem;
+            right: 0;
+            top: -0.5rem;
+            background-color: var(--color-blue);
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+    }
+}
+
+.menu__inner-list {
+    margin-top: 3.2rem;
+    gap: 3.2rem;
+    padding-left: 4.8rem;
+    padding-right: 0.5rem;
+}
+
+.menu__link {
+    display: inline-flex;
+    align-items: center;
+    transition: opacity var(--default-transition);
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.menu__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    @include vp-768 {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
+
+.menu__link-title {
+    padding: 0.5rem 0.5rem 0.5rem 1.6rem;
+    font-weight: 700;
+}

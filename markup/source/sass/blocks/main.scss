@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+
+    & > .container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    @include vp-768 {
+        padding-top: 7rem;
+    }
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    flex-grow: 1;
+    position: relative;
+
+    @include vp-768 {
+        grid-template-columns: 1fr;
+    }
+}

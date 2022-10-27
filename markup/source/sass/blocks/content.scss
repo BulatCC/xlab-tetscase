@@ -1,0 +1,41 @@
+.content {
+    padding: 2.5rem 3.2rem 3.2rem 3.2rem;
+
+    @include vp-768 {
+        padding: 2rem;
+    }
+
+    .button {
+        min-width: 21.7rem;
+
+        @include vp-768 {
+            min-width: 18rem;
+        }
+    }
+}
+
+.content__title {
+    margin-bottom: 1.6rem;
+}
+
+.content__sub-title {
+    margin-bottom: 2.4rem;
+}
+
+.content__info {
+    a {
+        color: #002BC5;
+        text-decoration: underline;
+    }
+}
+
+.content__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.content__input {
+    flex-grow: 1;
+}

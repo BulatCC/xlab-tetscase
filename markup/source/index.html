@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>X-Lab</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__container">
+                    <button class="burger">
+                        <span class="burger__open"></span>
+                        <span class="burger__close"></span>
+                      </button>
+                    <a href="#" class="header__wrappper">
+                        <img class="header__img" src="./img/svg/ic_logo.svg" alt="Логотип" width="48" height="48">
+                        <span class="header__title">Wrench CRM</span>
+                    </a>
+                    <a href="#" class="header__wrappper">
+                        <img class="header__img" src="./img/svg/ic_person.svg" alt="Логотип" width="48" height="48">
+                        <span class="header__title">Имя Фамилия</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container container--no-padding">
+                <div class="main__container">
+                    <section class="menu scrollable">
+                        <h2 class="menu__title">Меню</h2>
+                        <nav class="menu__nav-scrollable">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_house.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Главная</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item active">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_squares.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Главная</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_calendar.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Главная</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_pin.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Главная</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_tv.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Главная</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item menu__item--expand expanded">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_gear.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Настройки</span>
+                                    </a>
+                                    <ul class="menu__list menu__inner-list">
+                                        <li class="menu__inner-item">
+                                            <a href="#" class="menu__link">
+                                                <img class="menu__icon" src="./img/svg/ic_person-profile.svg" alt="Главная" width="32" height="32">
+                                                <span class="menu__link-title">Настройки профиля</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__inner-item">
+                                            <a href="#" class="menu__link">
+                                                <img class="menu__icon" src="./img/svg/ic_cashbox.svg" alt="Главная" width="32" height="32">
+                                                <span class="menu__link-title">Управление финансами</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+    
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        <img class="menu__icon" src="./img/svg/ic_logout.svg" alt="Главная" width="32" height="32">
+                                        <span class="menu__link-title">Главная</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="content scrollable">
+                        <h1 class="content__title">Поиск адресов</h1>
+                        <p class="content__sub-title">Введите интересующий вас адрес</p>
+                        <div class="content__wrapper">
+                            <input class="input content__input" type="text" placeholder="Введите интересующий вас адрес">
+                            <button class="button">
+                                <img class="button__img" src="./img/svg/ic_search-white.svg" alt="поиск" width="32" height="32">
+                                Поиск
+                            </button>
+                        </div>
+                        <div class="search-result">
+                            <h2 class="search-result__title">Адреса</h2>
+                            <ul class="search-result__list">
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Москва, улица Ленина 13, дом 32</a>
+                                </li>
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Санкт-Петербург, улица Ленина 13, дом 32</a>
+                                </li>
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Москва, улица Ленина 13, дом 32</a>
+                                </li>
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Санкт-Петербург, улица Ленина 13, дом 32</a>
+                                </li>
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Москва, улица Ленина 13, дом 32</a>
+                                </li>
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Санкт-Петербург, улица Ленина 13, дом 32</a>
+                                </li>
+                                <li class="search-result__item">
+                                    <a class="search-result__link" href="#">город Москва, улица Ленина 13, дом 32</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
