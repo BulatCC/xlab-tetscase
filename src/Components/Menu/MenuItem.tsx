@@ -22,10 +22,10 @@ const MenuItem = ({ menuData: { id, title, img, link, innerMenuData } }: MenuPro
     };
 
     return (
-        <li className={`menu__item ${innerMenuData ? 'menu__item--expand' : ''} ${expanded ? 'expanded' : ''}`} key={id}>
+        <li className={`menu__item ${innerMenuData ? 'menu__item--expand' : ''} ${expanded ? 'expanded' : ''}`} key={id} >
             {
                 link ?
-                    <NavLink className={'menu__link'} to={link} onClick={closeMobileMenuHandler}>
+                    <NavLink className={'menu__link'} to={link} onClick={closeMobileMenuHandler} end>
                         <img className="menu__icon" src={`./img/svg/${img}.svg`} alt={title} width="32" height="32" />
                         <span className="menu__link-title">{title}</span>
                     </NavLink>

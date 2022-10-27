@@ -17,7 +17,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const fileinclude = require('gulp-file-include');
 
 const html = () => {
-    return gulp.src(['source/html/*.html'])
+    return gulp.src(['source/**/*.html'])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@root',
